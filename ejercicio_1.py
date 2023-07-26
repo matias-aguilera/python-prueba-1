@@ -7,20 +7,28 @@
 
 
 
+def main():
+    puntos = int(input("¿inserte uo de los 3 valores: 0, 4, 6 "))
+    sueldo =0
+    if puntos == 0:
+        sueldo = (2400 * 0)
+    elif puntos == 4:
+        sueldo = (2400 * 0.4)
+    elif puntos == 6:
+        sueldo =(2400 * 0.6)
 
-puntos = int(input("¿inserte uo de los 3 valores: 0, 4, 6 "))
-if puntos == 0:
-    sueldo = (2400 * 0)
-elif puntos == 4:
-    sueldo = (2400 * 0.4)
-elif puntos == 6:
-    sueldo =(2400 * 0.6)
-else  :
-    print("eliga una de las opciones mostradas (0, 4, 6)") 
-       
     
 
-print("su sueldo en euros es: "  ,sueldo)
+    if sueldo == 0:
+            print("eliga una de las opciones mostradas (0, 4, 6)")
+            
+
+    print("su sueldo en euros es: "  ,sueldo)
+
+
+if __name__=="__main__":
+     main()
+    
 
 
     
